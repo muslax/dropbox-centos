@@ -1,0 +1,4 @@
+#!/bin/sh
+export LANGUAGE=en
+PAR=$(dirname "$(readlink -f "$0")")
+exec "$PAR/dropbox-lnx.x86_64-3.8.9/dropboxd" "$@"
